@@ -8,9 +8,7 @@ namespace SRP
         public string Title { get ; }
         public string Author { get ; }
         public string Code { get ;  }
-        public string LibrarySector { get ; set; }
-        public string LibraryShelve { get ; set; }
-
+        
         public Book(String title, String author, String code)
         {
             this.Title = title;
@@ -18,11 +16,7 @@ namespace SRP
             this.Code = code;
         }
 
-        public void ShelveBook(String sector, String shelve)
-        {
-            this.LibrarySector = sector;
-            this.LibraryShelve = shelve;
-        }
-
     }
 }
+//separamos las clases para que hayan 3 y asi la clase book solo tiene una responsabilidad (que es conocer los datos del libro)
+//
